@@ -1,5 +1,11 @@
+- [GitHub Pages](https://yelliver.github.io/pub/)
+
 ```shell
-jekyll new jekyll --force
+rm -rf jekyll
+```
+
+```shell
+jekyll new jekyll
 ```
 
 ```shell
