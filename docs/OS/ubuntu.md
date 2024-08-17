@@ -1,7 +1,21 @@
 ---
-title: Ubuntu
+title: Ubuntu - WSL
 parent: OS Setup
 ---
+
+### WSL
+
+#### Install
+
+```shell
+wsl --install
+```
+
+#### Set default user
+
+```shell
+ubuntu config --default-user root
+```
 
 ### Advanced Packaging Tool (apt)
 
@@ -18,7 +32,7 @@ sudo apt upgrade
 #### Remove user password
 
 ```shell
-sudo passwd -d USERNAME
+passwd -d USERNAME
 ```
 
 ### VPN Server Auto Setup Scripts
