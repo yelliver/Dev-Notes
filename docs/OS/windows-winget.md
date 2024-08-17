@@ -9,10 +9,10 @@ parent: OS Setup
 
 > [Official docs](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
 
-#### Install
+#### Fix source
 
 ```shell
-Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+Add-AppPackage -path "https://cdn.winget.microsoft.com/cache/source.msix."
 ```
 
 ### Usage
