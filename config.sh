@@ -9,9 +9,10 @@ rm jekyll/*.markdown
 rm jekyll/*.html
 rm -r jekyll/_posts
 
-# Copy docs
+# Copy contents
 cp -r docs jekyll
-mkdir -p jekyll/_includes/js
+cp -r theme_custom/_includes jekyll
+cp -r theme_custom/_sass jekyll
 
 # Enter the project
 cd jekyll
@@ -24,8 +25,6 @@ bundle add jekyll-optional-front-matter --group=jekyll_plugins
 
 # Adjust _config.yml
 yq eval 'del(.theme)' -i _config.yml
-#yq eval 'del(.email)' -i _config.yml
-#yq eval 'del(.description)' -i _config.yml
 yq eval '.title = "Memo"' -i _config.yml
 yq eval '.remote_theme = "just-the-docs/just-the-docs"' -i _config.yml
 yq eval '.plugins += ["jekyll-optional-front-matter"]' -i _config.yml
