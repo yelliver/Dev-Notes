@@ -56,12 +56,6 @@ reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Hi
 label C: System
 ```
 
-##### Enable Confirm File Delete
-
-```shell
-reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v ConfirmFileDelete /t REG_DWORD /d 1 /f
-```
-
 ##### Enable Remote Desktop
 
 ```shell
