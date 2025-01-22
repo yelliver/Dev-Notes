@@ -13,13 +13,17 @@ parent: OS Setup
 killall Dock
 ```
 
-#### Reset LaunchPad
+#### Reset LaunchPad (old)
 
 ```shell
 defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock
-# Or
+```
+
+#### Reset LaunchPad (afer 15.x)
+
+```shell
 sudo find 2>/dev/null /private/var/folders/ -type d -name com.apple.dock.launchpad -exec rm -rf {} +; killall Dock
-```````
+```
 
 #### Set LaunchPad grid size
 
@@ -31,13 +35,19 @@ defaults write com.apple.dock springboard-rows -int 6; killall Dock
 #### Set Dock size
 
 ```shell
-defaults write com.apple.dock tilesize -int 32
+defaults write com.apple.dock tilesize -int 32; killall Dock
+```
+
+#### Lock Dock size
+
+```shell
+defaults write com.apple.Dock size-immutable -bool true; killall Dock
 ```
 
 #### Add Dock spacer
 
 ```shell
-defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}'
+defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}'; killall Dock
 ```
 
 #### Clear all Dock icons
