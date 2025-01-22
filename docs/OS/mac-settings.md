@@ -1,5 +1,5 @@
 ---
-title: macOS
+title: macOS - Settings
 parent: OS Setup
 ---
 
@@ -55,20 +55,4 @@ defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-sp
 ```shell
 # Danger, this will clear all your dock icons!
 # defaults write "com.apple.dock" "persistent-apps" -array
-```
-
-### SDKMAN!
-
-#### [Usage](https://sdkman.io/usage)
-
-#### Install
-
-```shell
-curl -s "https://get.sdkman.io" | bash
-```
-
-#### List candidates
-
-```shell
-sdk list
 ```
