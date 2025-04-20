@@ -22,7 +22,7 @@ defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock
 #### Reset LaunchPad (afer 15.x)
 
 ```shell
-sudo find 2>/dev/null /private/var/folders/ -type d -name com.apple.dock.launchpad -exec rm -rf {} +; killall Dock
+rm -rf /private$(getconf DARWIN_USER_DIR)com.apple.dock.launchpad; killall Dock
 ```
 
 #### Set LaunchPad grid size
