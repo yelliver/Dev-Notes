@@ -26,5 +26,6 @@ bundle add jekyll-optional-front-matter --group=jekyll_plugins
 # Adjust _config.yml
 yq eval 'del(.theme)' -i _config.yml
 yq eval '.title = "Memo"' -i _config.yml
+yq eval '.url = "https://dash.momito.dev"' -i _config.yml
 yq eval '.remote_theme = "just-the-docs/just-the-docs"' -i _config.yml
 yq eval '.plugins += ["jekyll-optional-front-matter"]' -i _config.yml
