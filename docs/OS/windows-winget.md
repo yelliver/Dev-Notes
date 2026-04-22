@@ -62,4 +62,5 @@ winget install Docker.DockerDesktop
 winget install OlegDanilov.RapidEnvironmentEditor
 winget install Git.Git
 winget install GitHub.GitHubDesktop
+winget install Cloudflare.cloudflared
 ```
