@@ -5,6 +5,14 @@ parent: OS Setup
 
 ### Settings
 
+#### Activation
+
+[https://massgrave.dev/]([url](https://massgrave.dev/))
+
+```shell
+irm https://get.activated.win | iex
+```
+
 #### Restart Explorer
 
 ```shell
@@ -60,6 +68,13 @@ label C: System
 
 ```shell
 Rename-Computer -NewName "G-OptiPlex" -Force
+```
+
+
+##### Change timezone
+
+```shell
+tzutil /s "Singapore Standard Time"
 ```
 
 ##### Enable Remote Desktop
