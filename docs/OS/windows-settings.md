@@ -59,7 +59,7 @@ label C: System
 ##### Change PC Name
 
 ```shell
-wmic computersystem where name="%computername%" call rename name="G-OptiPlex"
+Rename-Computer -NewName "G-OptiPlex" -Force
 ```
 
 ##### Enable Remote Desktop
