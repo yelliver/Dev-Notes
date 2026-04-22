@@ -56,6 +56,12 @@ reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Hi
 label C: System
 ```
 
+##### Change PC Name
+
+```shell
+wmic computersystem where name="%computername%" call rename name="G-OptiPlex"
+```
+
 ##### Enable Remote Desktop
 
 ```shell
