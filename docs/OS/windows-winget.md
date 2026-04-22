@@ -44,21 +44,22 @@ winget upgrade --all
 #### Common
 
 ```shell
-winget install "Microsoft.PowerToys"
-winget install "Microsoft.Skype"
-winget install "UniKey.UniKey"
-winget install "7zip.7zip"
-winget install
-winget install
+winget install Microsoft.PowerToys
+winget install UniKey.UniKey
+winget install 7zip.7zip
+winget install Tuyenvm.OpenKey
+winget install RARLab.WinRAR
 ```
 
 #### Dev
 
 ```shell
-winget install "Microsoft.VisualStudioCode"
-winget install "JetBrains.IntelliJIDEA.Ultimate"
-winget install "Docker.DockerDesktop"
-winget install "OlegDanilov.RapidEnvironmentEditor"
-winget install "Git.Git"
-winget install "GitHub.GitHubDesktop"
+winget install vfox
+winget install SublimeHQ.SublimeText.4
+winget install Microsoft.VisualStudioCode
+winget install JetBrains.IntelliJIDEA.Ultimate
+winget install Docker.DockerDesktop
+winget install OlegDanilov.RapidEnvironmentEditor
+winget install Git.Git
+winget install GitHub.GitHubDesktop
 ```
